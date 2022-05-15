@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2022 at 09:45 AM
+-- Generation Time: May 15, 2022 at 11:42 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -45,19 +45,6 @@ INSERT INTO `power_cut_schedule` (`powercutscheduleID`, `area`, `starttime`, `en
 (19, 'Anuradhapura ', '12.00p.m.', '02.00p.m.', 'C'),
 (20, 'Colombo', '10.00a.m.', '02.00p.m.', 'B');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `test`
---
-
-CREATE TABLE `test` (
-  `TestID` int(10) NOT NULL,
-  `TestName` int(20) NOT NULL,
-  `TestCode` int(10) NOT NULL,
-  `TestDesc` int(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Indexes for dumped tables
 --
@@ -69,12 +56,6 @@ ALTER TABLE `power_cut_schedule`
   ADD PRIMARY KEY (`powercutscheduleID`);
 
 --
--- Indexes for table `test`
---
-ALTER TABLE `test`
-  ADD PRIMARY KEY (`TestID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -83,12 +64,6 @@ ALTER TABLE `test`
 --
 ALTER TABLE `power_cut_schedule`
   MODIFY `powercutscheduleID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
--- AUTO_INCREMENT for table `test`
---
-ALTER TABLE `test`
-  MODIFY `TestID` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
